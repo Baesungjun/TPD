@@ -3553,7 +3553,8 @@ Transform:
   m_LocalPosition: {x: -6, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1902107002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &996706883
@@ -6727,6 +6728,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901414642}
   m_CullTransparentMesh: 1
+--- !u!1 &1902107001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902107002}
+  - component: {fileID: 1902107003}
+  m_Layer: 0
+  m_Name: SuitUpgradeSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1902107002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902107001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 996706882}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1902107003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902107001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4210d9cbf26a4b4a8c51ae683486bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TPD.SuitUpgradeSystem
+  spades:
+    level: 0
+    maxLevel: 20
+    baseCost: 50
+    growth: 1.5
+    atk_pct: 0.06
+    atk_spd_pct: 0
+    crit_chance_pct: 0.02
+    crit_mult_pct: 0.1
+  hearts:
+    level: 0
+    maxLevel: 20
+    baseCost: 50
+    growth: 1.5
+    atk_pct: 0.05
+    atk_spd_pct: 0.05
+    crit_chance_pct: 0
+    crit_mult_pct: 0
+  diamonds:
+    level: 0
+    maxLevel: 20
+    baseCost: 50
+    growth: 1.5
+    atk_pct: 0.04
+    atk_spd_pct: 0.03
+    crit_chance_pct: 0
+    crit_mult_pct: 0
+  clubs:
+    level: 0
+    maxLevel: 20
+    baseCost: 50
+    growth: 1.5
+    atk_pct: 0.04
+    atk_spd_pct: 0
+    crit_chance_pct: 0
+    crit_mult_pct: 0.05
 --- !u!1 &1920779452
 GameObject:
   m_ObjectHideFlags: 0
